@@ -7,7 +7,7 @@ def confused(n_tup:tuple):
         r_tup += (getP(n),)
 
     thresh = ((3+ sum(r_tup[:3]))/(1+r_tup[-1])) -1
-
+    print(thresh)
     if thresh >2.5:
         return 100
     elif thresh >2:

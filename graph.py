@@ -16,6 +16,7 @@ line, = axes.plot(xdata, ydata, 'r-')
 for i in range(30):
     xdata.append(i)
     ysample = webcam.web()
+    print(f'Confusion Index: {ysample}')
     ydata.append(ysample)
     line.set_xdata(xdata)
     line.set_ydata(ydata)

@@ -37,10 +37,10 @@ def trait(face):
     print('Faces:')
 
     for face in faces:
-        print('anger: {}'.format(likelihood_name[face.anger_likelihood]))
-        print('joy: {}'.format(likelihood_name[face.joy_likelihood]))
-        print('surprise: {}'.format(likelihood_name[face.surprise_likelihood]))
-        print('sorrow: {}'.format(likelihood_name[face.sorrow_likelihood]))
+        print('    anger: {}'.format(likelihood_name[face.anger_likelihood]))
+        print('    joy: {}'.format(likelihood_name[face.joy_likelihood]))
+        print('    surprise: {}'.format(likelihood_name[face.surprise_likelihood]))
+        print('    sorrow: {}'.format(likelihood_name[face.sorrow_likelihood]))
         return (face.anger_likelihood, face.surprise_likelihood, face.sorrow_likelihood,face.joy_likelihood)
         vertices = (['({},{})'.format(vertex.x, vertex.y)
                     for vertex in face.bounding_poly.vertices])
